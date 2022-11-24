@@ -20,12 +20,12 @@ jobs:
         uses: kewisch/action-web-ext@v1
         with:
           cmd: build
-          source: src
+          source: .
           filename: "target.xpi"
           ignoreFiles: '[ "package.json","package-lock.json","screenshot"]'
 
       - name: "Upload Artifact"
         uses: actions/upload-artifact@v3
         with:
-          name: target.xpi
+          name: "target.xpi"
           path: ${{ steps.web-ext-build.outputs.target }}
