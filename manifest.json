@@ -16,6 +16,14 @@
       "js": ["js/lilo.js"],
       "run_at": "document_end"
     }
-  ]
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "7318dbea-4210-4c6c-a342-839de6ec09aa",
+      "strict_min_version": "42.0"
+    }
+  }
+
 
 }
