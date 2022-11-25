@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Lilo+",
-  "version": "0.2",
+  "version": "0.3",
 
   "description": "This web extension improves the Lilo search engine. This is not an official extension.",
 
@@ -20,8 +20,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "{7318dbea-4210-4c6c-a342-839de6ec09aa}",
-      "strict_min_version": "42.0"
+      "id": "{7318dbea-4210-4c6c-a342-839de6ec09aa}"
     }
   }
 
