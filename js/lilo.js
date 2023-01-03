@@ -1,6 +1,7 @@
 function main_liloplus() {
   const div_error = document.querySelector("div.hidden>div.cf-error-details")
-  if (div_error!==null){
+  const lilo_search = document.querySelector("#lilo-search")
+  if (div_error!==null || lilo_search === null){
     const queryString = window.location.search
     const urlParams = new URLSearchParams(queryString)
     window.location.href = "https://www.startpage.com/do/dsearch?query="+encodeURIComponent(urlParams.get("q"))
