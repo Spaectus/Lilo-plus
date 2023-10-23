@@ -1,21 +1,9 @@
 function main_liloplus() {
-  const div_error = document.querySelector("div.hidden>div.cf-error-details")
-  const lilo_search = document.querySelector("#lilo-search")
-  if (div_error!==null || lilo_search === null){
-    const queryString = window.location.search
-    const urlParams = new URLSearchParams(queryString)
-    window.location.href = "https://www.startpage.com/do/dsearch?query="+encodeURIComponent(urlParams.get("q"))
-    return null
-  }
-  const f=document.querySelector("#search-tab-btn__google")
-  f.title = f.title.replaceAll("Google", "Startpage")
-  f.innerText = "Startpage"
-  f.onclick = function(){
-    window.location.href = "https://www.startpage.com/do/dsearch?query="+encodeURIComponent(document.querySelector("#lilo-search").value);
-  };
-
-
-
+  const search = document.querySelector('input[name="q"]').value;
+  const a = document.querySelector('#tabs>a[href^="https://google."]')
+  a.href = "https://www.startpage.com/do/dsearch?query="+encodeURIComponent(search);
+  a.querySelector("span").innerText = "Startpage"
+  
 }
 //console.log("Lilo+");
 main_liloplus();
