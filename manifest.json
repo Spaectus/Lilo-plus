@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Lilo+",
-  "version": "0.5",
+  "version": "0.6",
 
   "description": "This web extension improves the Lilo search engine. This is not an official extension.",
 
@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://search.lilo.org/?q=*"],
+      "matches": ["*://search.lilo.org/*"],
       "js": ["js/lilo.js"],
       "run_at": "document_end"
     }
