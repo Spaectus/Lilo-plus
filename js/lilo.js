@@ -4,7 +4,7 @@ function main_liloplus() {
   if (a!=null) {
     // new version of lilo
 
-    if (document.title.startsWith("https://search.lilo.org/?q=")) {
+    if (document.title === "") {
       document.title = search // change page title if irrelevant
     }
     
