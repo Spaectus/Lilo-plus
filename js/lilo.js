@@ -3,6 +3,11 @@ function main_liloplus() {
   const a = document.querySelector('#tabs>a[href^="https://google."]');
   if (a!=null) {
     // new version of lilo
+
+    if (document.title.startsWith("https://search.lilo.org/?q=")) {
+      document.title = search // change page title if irrelevant
+    }
+    
     a.href = "https://www.startpage.com/do/dsearch?query="+encodeURIComponent(search);
     a.querySelector("span").innerText = "Startpage";
   } else {
@@ -15,5 +20,5 @@ function main_liloplus() {
   }
 
 }
-//console.log("Lilo+");
+
 main_liloplus();
